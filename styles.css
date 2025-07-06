@@ -1,0 +1,172 @@
+/* Общие стили */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Шапка */
+.main-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.header-left img {
+  height: 40px;
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.header-right img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+
+.header-text {
+  margin: 0;
+}
+
+/* Блок ближайшего мероприятия */
+.frontend-school {
+  background-image: url(./img/Group\ 1.png);
+  background-size: cover;       /* Растягивает изображение на всю секцию */
+  background-position: center;  /* Центрирует изображение */
+  background-repeat: no-repeat; /* Отключает повторение */
+  padding: 40px 0;
+  width: 1030px;
+  height: 300px
+}
+
+.frontend-school-main {
+    background-color: ;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 500px;
+}
+
+.frontend-school-main h3 {
+  margin: 0;
+  font-size: 16px;
+  color: #666;
+}
+
+.frontend-school-main h1 {
+  margin: 0;
+  font-size: 32px;
+  line-height: 1.2;
+}
+
+.date-location {
+  font-size: 18px;
+  color: #555;
+}
+
+.signup-button {
+  padding: 12px 24px;
+  background-color: #0066cc;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  align-self: flex-start;
+}
+
+/* Блок всех мероприятий */
+.all-events {
+  padding: 40px 0;
+}
+
+.all-events-main {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.all-events-main-title h2 {
+  margin: 0;
+  font-size: 24px;
+}
+
+.all-events-choice {
+  display: flex;
+  gap: 15px;
+}
+
+.all-events-choice button {
+  padding: 8px 16px;
+  background-color: #f0f0f0;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.all-events-choice button:hover {
+  background-color: #e0e0e0;
+}
+
+/* Таблица мероприятий */
+.all-events-it {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 12px 15px;
+  text-align: left;
+  border: 1px solid #ddd;
+}
+
+th {
+  background-color: #f5f5f5;
+  font-weight: bold;
+}
+
+/* Кнопки регистрации */
+table button {
+  padding: 8px 16px;
+  background-color: #0066cc;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+  .frontend-school-main {
+    max-width: 100%;
+  }
+  
+  .all-events-choice {
+    flex-wrap: wrap;
+  }
+  
+  table {
+    display: block;
+    overflow-x: auto;
+  }
+}
