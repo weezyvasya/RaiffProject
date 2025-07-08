@@ -19,13 +19,13 @@
     </header>
     <main>
       <section class="frontend-school">
-        <div class="container">
-          <div class="frontend-school-main">
-            <h3>Ближайшее мероприятие</h3>
-            <h1>Школа по фронтенду</h1>
-            <div class="date-location">25.05.2020 - Офис в Нагатино</div>
-            <button class="signup-button">Записаться на курс</button>
+        <div class="frontend-school-main">
+          <h3>Ближайшее мероприятие</h3>
+          <h1>Школа по фронтенду</h1>
+          <div class="date-location">
+            25.05.2020<span>Офис в Нагатино</span>
           </div>
+          <button class="signup-button">Записаться на курс</button>
         </div>
       </section>
       <section class="all-events">
@@ -35,22 +35,15 @@
               <h2>Все мероприятия</h2>
             </div>
             <nav class="all-events-choice">
-              <button class="all-events-choice_selected" >IT Academy</button>
+              <button class="all-events-choice_selected">IT Academy</button>
               <button>Маркетинг</button>
               <button>Retail</button>
               <button>Остальные</button>
             </nav>
             <div class="all-events-it">
               <table class="events-table">
-                <thead>
-                  <tr>
-                    <th class="date-column">Дата</th>
-                    <th class="event-column">Мероприятие</th>
-                    <th class="participants-column">Участники</th>
-                    <th class="registration-column">Регистрация</th>
-                  </tr>
-                </thead>
                 <tbody>
+                  <!-- Первое мероприятие -->
                   <tr>
                     <td class="date-column">25.05.2020</td>
                     <td class="event-column">
@@ -62,8 +55,17 @@
                         К посещению приглашаются сотрудники 18+
                       </div>
                     </td>
+                    <td class="number-column">
+                      <div class="number-with-heart">
+                        <img
+                          src="./img/heart.svg"
+                          alt="Избранное"
+                          class="heart-icon"
+                        />
+                        <span class="participant-number">11</span>
+                      </div>
+                    </td>
                     <td class="participants-column">
-                      <div class="participant-number">11</div>
                       <div class="participant-name">Иннокентий Жданов</div>
                       <div class="participant-name">Поликарпий Осипов</div>
                     </td>
@@ -71,9 +73,10 @@
                       <button class="registration-button">
                         Зарегистрироваться
                       </button>
-                      <div class="registration-status">Регистрация закрыта</div>
                     </td>
                   </tr>
+
+                  <!-- Второе мероприятие -->
                   <tr>
                     <td class="date-column">25.05.2020</td>
                     <td class="event-column">
@@ -86,17 +89,25 @@
                         солнце. Чистый кайф.
                       </div>
                     </td>
+                    <td class="number-column">
+                      <div class="number-with-heart">
+                        <img
+                          src="./img/heart.svg"
+                          alt="Избранное"
+                          class="heart-icon"
+                        />
+                        <span class="participant-number">110</span>
+                      </div>
+                    </td>
                     <td class="participants-column">
-                      <div class="participant-number">110</div>
                       <div class="participant-name">Николай Острецов</div>
                     </td>
                     <td class="registration-column">
-                      <button class="registration-button">
-                        Зарегистрироваться
-                      </button>
-                      <div class="registration-status">Регистрация закрыта</div>
+                      <div class="registration-closed">Регистрация закрыта</div>
                     </td>
                   </tr>
+
+                  <!-- Третье мероприятие -->
                   <tr>
                     <td class="date-column">25.05.2020</td>
                     <td class="event-column">
@@ -110,17 +121,27 @@
                         шуточки?!
                       </div>
                     </td>
+                    <td class="number-column">
+                      <div class="number-with-heart">
+                        <img
+                          src="./img/heart.svg"
+                          alt="Избранное"
+                          class="heart-icon"
+                        />
+                        <span class="participant-number">11</span>
+                      </div>
+                    </td>
                     <td class="participants-column">
-                      <div class="participant-number">11</div>
                       <div class="participant-name">Акакий Шопский</div>
                     </td>
                     <td class="registration-column">
                       <button class="registration-button">
                         Зарегистрироваться
                       </button>
-                      <div class="registration-status">Регистрация закрыта</div>
                     </td>
                   </tr>
+
+                  <!-- Четвертое мероприятие -->
                   <tr>
                     <td class="date-column">25.05.2020</td>
                     <td class="event-column">
@@ -133,15 +154,21 @@
                         рады ее забрать
                       </div>
                     </td>
+                    <td class="number-column">
+                      <div class="number-with-heart">
+                        <img
+                          src="./img/heart.svg"
+                          alt="Избранное"
+                          class="heart-icon"
+                        />
+                        <span class="participant-number">11</span>
+                      </div>
+                    </td>
                     <td class="participants-column">
-                      <div class="participant-number">11</div>
                       <div class="participant-name">Иван Стручков</div>
                     </td>
                     <td class="registration-column">
-                      <button class="registration-button">
-                        Зарегистрироваться
-                      </button>
-                      <div class="registration-status">Регистрация закрыта</div>
+                      <div class="registration-closed">Регистрация закрыта</div>
                     </td>
                   </tr>
                 </tbody>
