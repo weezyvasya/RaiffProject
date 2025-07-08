@@ -56,16 +56,28 @@ body {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  background-color: rgba(207, 241, 233, 1);
+  border-radius: 20px;
+  overflow: hidden; 
   padding: 40px 0;
   height: 300px;
-  margin-bottom: 30px;
+  max-width: 1030px;
+  margin: 40px auto 30px auto;
+  position: relative;
 }
 
 .frontend-school-main {
+  position: absolute;
+  top: 50%;
+  left: 40px; /* Фиксированный отступ слева вместо центрирования */
+  transform: translateY(-50%); /* Только вертикальное центрирование */
+  max-width: 500px;
+  width: 100%;
+  padding-right: 20px; /* Отступ только справа */
+  box-sizing: border-box;
   display: flex;
   flex-direction: column;
-  gap: 15px;
-  max-width: 500px;
+  gap: 15px; /* Равномерные отступы между элементами */
 }
 
 .frontend-school-main h3 {
